@@ -8,6 +8,11 @@ jobs:
   runs-on: ubuntu-latest
 
   steps:
+   - name: Saludar
+     uses: JoeyMP/hello-world-javascript-action@v1.0
+     with:
+      who-to-greet: 'Joey'
+  
    - name: Tener copia local del repositorio
      uses: actions/checkout@v4.2.2
 
